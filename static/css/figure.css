@@ -1,0 +1,178 @@
+.nav-footer{
+    height: 16px;
+}
+.p-20 {
+    padding: 50px;
+}
+.figure-info {
+    width: 48%;
+    float: left;
+}
+.reactions {
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.item-info {
+    width: 100%;
+    
+}
+.item-info-img {
+    width: 100%;
+}
+.desc {
+    font-size: 0.8rem;
+}
+.thumb-link {
+    display: inline-block;
+    padding: 6px;
+}
+.thumb-link:focus, .thumb-link:hover {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
+.thumb-img {
+    width: 75px;
+    height: 75px;
+}
+.text-brick {
+    display: inline;
+    padding: 3px;
+    font-size: 1.1rem;
+}
+dl dd {
+    margin-top: 5px;
+}
+dt, dd {
+    line-height: 16px !important;
+}
+dd {
+    margin-left: 10px;
+}
+.copy {
+    margin-left: 10px;
+}
+.p-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.p-contents {
+    font-size: 0.85rem;
+    margin-left: 20px;
+}
+.p-link-color {
+    color: #ff8400;
+}
+.gallery-img {
+    width: 100%;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.like-btn {
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+.o-heart {
+    color: #97a4b15e;
+}
+.like {
+    color: #f6a0cd;
+}
+.likes {
+    color: #655d5df2;
+}
+
+.comments-container {
+    width: 100%;
+    padding: 20px;
+}
+.comment-wrapper {
+    border: 1px solid #f2f5f7;
+    padding: 13px 19px;
+}
+.avatar-container {
+    width: 10%;
+    display: inline-block;
+}
+.avatar {
+    width: 44px;
+    height: 44px;
+    vertical-align: top;
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+.comment-body {
+    width: 89%;
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: top;
+}
+.name {
+    font-weight: bold;
+}
+.username {
+    font-size: 0.8rem;
+    vertical-align: text-bottom;
+    color: #93979acf;
+}
+.time {
+    font-size: 0.8rem;
+    color: #93979acf;
+}
+.vertical-middle {
+    vertical-align: middle;
+}
+.comment-content {
+}
+.to-comment {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+    
+}
+
+.textarea {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    background-color: white;
+    background-color: -moz-field;
+    font: -moz-field;
+    font: -webkit-small-control;
+    margin-top: 5px;
+    padding: 2px 3px;
+    width: 100%;
+    min-height: 72px;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+    color: gray;
+}
+
+.comment-wrapper {
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.btn-wrapper {
+    height: 50px;
+}
+.comment-blue {
+    color: #268ae6;
+}

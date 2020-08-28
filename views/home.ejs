@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <%- include('meta'); -%>
+    
+    <title>Kairaishi for someone love figures</title>
+    <%- include('import-css'); -%>
+    <link rel="stylesheet" href="/static/css/setting.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+
+</head>
+<body>
+    <%- include('nav'); -%>
+    <div class="bg position-relative">
+        <p class="slogan position-absolute pos-abs-center"><code class="App-link">Kairaishi</code> for figurelovers.</p>
+    </div>
+    <div class="loading-container text-center">
+        <div class="spinner-grow twitter-color" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <section class="gallery mt-5 container">
+
+    </section>
+    <%- include('footer'); -%>
+    <%- include('import-js'); -%>
+   <script>
+       $(document).ready(function(){
+            for(let i=0; i<2; i++) {
+                $.ajax(
+                    {
+                        url: "/api/random/figures",
+                        data: {
+                            n: 4
+                        } ,
+                        success: function(data){
+                        let  figures = data.result 
+                    let figuresRow = $("<div class='my-5 row'></div>");
+                    for(let j=0;j<figures.length;j++) {
+                        figuresRow.append($(`
+                        <div class="mt-3 col-md-3 col-12">
+                            <div class="card card-lg">
+                                <img class="card-img-top" src="https://raw.githubusercontent.com/kairaishi/kairaishi/master${figures[j].thumbnail}" alt="Card image cap">
+                                <div class="card-body">
+                                    <a href="/figures/${figures[j].hash}/${figures[j].id}" class="card-link">
+                                        <h5 class="card-title">${figures[j].name}</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>`));
+                    }
+                    figuresRow.appendTo($(".gallery.mt-5.container"));
+                    $('.loading-container').css('display', 'none');
+                }});
+                    
+            }
+            
+        });
+
+   </script>
+    </body>
+</html>

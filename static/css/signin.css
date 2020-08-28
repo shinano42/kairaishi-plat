@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url(https://res.cloudinary.com/respository/image/upload/v1597453478/kairaishi/anime_characters_qvwxat.png) no-repeat fixed center;
+    background-size: contain;
+}
+
+.flex-vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+a.social {
+    text-decoration: none !important;
+    color: white;
+}
+
+.btn-size {
+    width: 270px;
+}
+
+.google-color {
+    color: #dd4b39;
+}
+
+.google-bgc {
+    background: #dd4b39 !important;
+}
+
+.twitter-color {
+    color: #55ACEE;
+}
+
+.twitter-bgc {
+    background: #00acee !important;
+}
+
+.facebook-bgc {
+    background-color: #3c5997 !important;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-twitter-rev {
+    color: #55ACEE;
+    background: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-google-rev {
+    color: #dd4b39;
+    background: white;
+}
+
+@media only screen and (max-width: 575.98px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .login-text {
+        text-align: center;
+        margin: 0;
+        padding: 10% 0;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 0deg, rgba(34, 193, 195, 0.31) 0%, rgba(45, 80, 253, 0.74) 100%);
+    }
+}
+
+.login-text {
+    text-align: center;
+    margin: 0;
+    padding: 10% 0;
+}
+
+@media only screen and (min-width: 576px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient( 90deg, rgba(34, 193, 195, 0.8253676470588236) 0%, rgba(253, 45, 226, 0.676908263305322) 100%);
+    }
+    .box {
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+        width: 420px;
+        height: 560px;
+    }
+    .left-semi {
+        position: absolute;
+        left: -5rem;
+        bottom: 20%;
+    }
+    .right-semi {
+        position: absolute;
+        right: -5rem;
+        top: 20%;
+        transform: rotate(180deg);
+    }
+    .semi-circle {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background: linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(239, 103, 255, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+    .login-text {
+        color: #fff;
+    }
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.silhouette {
+    width: 480px;
+    height: 640px;
+}
+
+.border-2 {
+    box-shadow: 0 0 1px 2px #fff;
+}

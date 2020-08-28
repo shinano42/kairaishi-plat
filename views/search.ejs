@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <%- include('meta'); -%>
+    
+    <title>Search for figures</title>
+    <%- include('import-css'); -%>
+    <link rel="stylesheet" href="/static/css/setting.css">
+</head>
+<body>
+    <%- include('nav'); -%>
+    
+    <div class="mt-5 container">
+        <div class="my-5 row">
+            <div class="col-md-3 col-12">
+                <select class="form-control" id="field">
+                    <% for (let i = 0; i < fields.length; i++) {
+                        if (fields[i] === 'sculptor' || fields[i] === 'description') {
+                            let map = {
+                                sculptor : 'model_sculptor',
+                                description: 'desc'
+                            };
+                    %>
+                        <option value="<%= map[fields[i]] %>"><%= fields[i].charAt(0).toUpperCase() + fields[i].slice(1); %></option>
+                    <%
+                            } else {
+                    %>
+                        
+                        <option value="<%= fields[i] %>"><%= fields[i].charAt(0).toUpperCase() + fields[i].slice(1); %></option>
+                    <%
+                            }
+                    } %>
+                </select>
+            </div>
+            <div class="col-md-3 col-12" >
+                <div class="form-group">
+                    <input type="text" class="form-control" id="keyword" placeholder="keyword">
+                </div>
+            </div>
+            <div class="col-md-3 col-12" >
+                <button type="button" class="btn position-absolute btn-right twitter-color-bg search-btn">Search</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="loading-container text-center">
+        <div class="spinner-grow twitter-color" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <section class="mt-5 container figures-container">
+
+    </section>
+
+    <%- include('import-js'); -%>
+    <script src="/static/js/search.js"></script>
+   
+    </body>
+</html>

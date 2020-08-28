@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <%- include('meta'); -%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= makerName  %></title>
+    <%- include('import-css'); -%>
+    <link rel="stylesheet" href="/static/css/setting.css">
+</head>
+<body>
+    <%- include('nav'); -%>
+    <div class="mt-5 container">
+        <div class="my-5 row">
+            <div class="col-md-3 col-12">
+                <select class="form-control" id="releasedYear">
+                    <option> </option>
+                    <% for(let i=0;i<years.length;i++) { %>
+                        <% if (years[i] == year) { %>
+                            <option selected="selected"><%= years[i] %></option>
+                        <%  } else { %>
+                            <option ><%= years[i] %></option>
+                        <% } %>
+                    <% } %>
+                </select>
+            </div>
+            <div class="col-md-3 col-12" >
+                <select class="form-control" id="releasedMonth">
+                    <option value="-1"> </option>
+                    <option value="1">1月</option>
+                    <option value="2">2月</option>
+                    <option value="3">3月</option>
+                    <option value="4">4月</option>
+                    <option value="5">5月</option>
+                    <option value="6">6月</option>
+                    <option value="7">7月</option>
+                    <option value="8">8月</option>
+                    <option value="9">9月</option>
+                    <option value="10">10月</option>
+                    <option value="11">11月</option>
+                    <option value="12">12月</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <div class="loading-container text-center">
+        <div class="spinner-grow twitter-color" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <section class="mt-5 container figures-container">
+    </section>
+
+    <%- include('import-js'); -%>
+
+    <script src="/static/js/maker.js"></script>
+</body>
+</html>

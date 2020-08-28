@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/signin.css">
+    <%- include('import-css'); -%>
+</head>
+<body>
+    <div class="box" style="background-image: url('../static/assets/misaka.png'); background-size: cover;">
+        <div class=" text-center">
+            <h2 class="login-text">Sign in</h2>
+            <div class="mt-4 row">
+                <div class="col">
+                    <button class="px-4 google-bgc text-dark btn btn-danger btn-lg btn-size">
+                        <a href="/auth/google" class="social">
+                            <i class="fa fa-google border-2"></i>
+                            <span class="pl-2">
+                                Sign in via Google
+                            </span>
+                        </a>
+                    </button>
+                </div>
+            </div>  
+            <div class="mt-4 row">
+                <div class="col">
+                    <button class="px-4 twitter-bgc btn btn-lg btn-size">
+                        <a href="/auth/twitter" class="social">
+                            <i class="fa fa-twitter border-2"></i>
+                            <span class="pl-2">
+                                Sign in via Twitter
+                            </span>
+                        </a>    
+                    </button>
+                </div>
+            </div> 
+            <div class="mt-4 row">
+                <div class="col">
+                    <button class="px-4 facebook-bgc btn btn-lg btn-size">
+                        <a href="/auth/facebook" class="social">
+                            <i class="fa fa-facebook border-2"></i>
+                            <span class="pl-2">
+                                Sign in via Facebook
+                            </span>
+                        </a>    
+                    </button>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+    <%- include('import-js'); -%>
+</body>
+</html>

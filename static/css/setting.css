@@ -1,0 +1,135 @@
+.profile-image {
+    width: 35px;
+    height: 35px;
+}
+.month-tag {
+    color: #fff;
+    width: 80px;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.month-tag:hover {
+    opacity: 1;
+}
+.jan {
+    background-color: rgb(191, 128, 64);
+}
+.feb {
+    background-color: rgb(191, 191, 64);
+}
+.mar {
+    background-color: rgb(128, 191, 64);
+}
+.apr {
+    background-color: rgb(64, 191, 64);
+}
+.may {
+    background-color: rgb(64, 191, 128);
+}
+.june {
+    background-color: rgb(64, 191, 191);
+}
+.july {
+    background-color: rgb(64, 128, 191);
+}
+.aug {
+    background-color: rgb(64, 64, 191);
+}
+.sept {
+    background-color: rgb(128, 64, 191);
+}
+.oct {
+    background-color: rgb(191, 64, 191);
+}
+.nov {
+    background-color: rgb(191, 64, 128);
+}
+.dec {
+    background-color: rgb(191, 64, 64);
+}
+
+
+.jan.color {
+    background-color: unset !important;
+    color: rgb(191, 128, 64);
+}
+.feb.color {
+    background-color: unset !important;
+    color: rgb(191, 191, 64);
+}
+.mar.color {
+    background-color: unset !important;
+    color: rgb(128, 191, 64);
+}
+.apr.color {
+    background-color: unset !important;
+    color: rgb(64, 191, 64);
+}
+.may.color {
+    background-color: unset !important;
+    color: rgb(64, 191, 128);
+}
+.june.color {
+    background-color: unset !important;
+    color: rgb(64, 191, 191);
+}
+.july.color {
+    background-color: unset !important;
+    color: rgb(64, 128, 191);
+}
+.aug.color {
+    background-color: unset !important;
+    color: rgb(64, 64, 191);
+}
+.sept.color {
+    background-color: unset !important;
+    color: rgb(128, 64, 191);
+}
+.oct.color {
+    background-color: unset !important;
+    color: rgb(191, 64, 191);
+}
+.nov.color {
+    background-color: unset !important;
+    color: rgb(191, 64, 128);
+}
+.dec.color {
+    background-color: unset !important;
+    color: rgb(191, 64, 64);
+}
+.c-white {
+    color: white;
+}
+.twitter-color-bg {
+    background-color: 	#1DA1F2;
+}
+.twitter-color {
+    color: 	#1DA1F2;
+}
+
+.invert {
+    mix-blend-mode: difference;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+.edit-btn {
+    cursor: pointer;
+}
+.delete-btn {
+    cursor: pointer;
+}
+.loading-container {
+    width: 100vw;
+    height: 30px;
+}
+@media screen and (min-width: 765px) {
+    .card-lg {
+        height: 455px;
+    }
+}
+
